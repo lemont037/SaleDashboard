@@ -99,17 +99,17 @@ Aqui estão alguns dos principais endpoints disponíveis na API:
 
 - **Criar um Canal de Vendas**:
   - **Método**: `POST`
-  - **Endpoint**: `/create_salesChannel/<str:name>`
+  - **Endpoint**: `/api/create_salesChannel/<str:name>`
   - **Descrição**: Cria um novo canal de vendas. O parâmetro `name` é necessário para definir o nome do canal.
 
 - **Listar Vendas**:
   - **Método**: `GET`
-  - **Endpoint**: `/sales/`
+  - **Endpoint**: `/api/sales/`
   - **Descrição**: Retorna uma lista de vendas com a possibilidade de filtrar por `period_from`, `period_to`, `state` e `sale_channel`.
 
 - **Criar uma Venda**:
   - **Método**: `POST`
-  - **Endpoint**: `/sales/create/`
+  - **Endpoint**: `/api/sales/create/`
   - **Descrição**: Cria uma nova venda com base nos dados fornecidos no corpo da requisição.
 
 ### 🛠️ Atualizações Automáticas
