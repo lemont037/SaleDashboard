@@ -1,6 +1,6 @@
-# 🚀 **Projeto Django com Docker e PostgreSQL** 🐳
+# 🚀 **Dashboard de Vendas | Projeto Django com Docker e PostgreSQL** 🐳
 
-Este repositório configura um ambiente Docker para uma aplicação Django com banco de dados PostgreSQL, da qual apresenta um Dashboard de Vendas. Aqui está como você pode facilmente rodar este projeto dentro de containers Docker.
+Este repositório configura um ambiente Docker para uma aplicação Django com banco de dados PostgreSQL, da qual apresenta um Dashboard simples de Vendas. Aqui está como você pode facilmente rodar este projeto dentro de containers Docker.
 
 ---
 
