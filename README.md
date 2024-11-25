@@ -27,8 +27,8 @@ Antes de começar, você precisa ter o seguinte instalado:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/projeto-django-docker.git
-   cd projeto-django-docker
+   git clone https://github.com/lemont037/SaleDashboard.git
+   cd SaleDashboard
    ```
 
 2. Crie um arquivo `.env` com as variáveis de ambiente necessárias. Aqui você pode atribuir os valores que desejar:
