@@ -69,6 +69,56 @@ Essa é uma lista dos registros criados por padrão no banco, por meio dessas in
 |30/09/2024 12:23:35|9.99|9.00|BA|loja|
 
 ---
+## 🚀 Documentação da API
+
+A nossa API é completamente documentada utilizando o [Swagger UI](https://swagger.io/tools/swagger-ui/), permitindo que você visualize e interaja com os endpoints de forma simples e eficiente.
+
+### 📝 Acessando a Documentação
+
+Para acessar a documentação interativa da API, basta navegar até o seguinte endpoint em seu navegador:
+
+```
+http://localhost:8000/docs/
+```
+
+Esta interface exibe todos os endpoints da API, incluindo as descrições, parâmetros esperados e exemplos de resposta.
+
+### 🔍 Exploração Interativa
+
+O Swagger UI permite que você explore os recursos da API de forma interativa. Você pode:
+
+- **Visualizar Endpoints**: Todos os endpoints disponíveis são listados, incluindo informações sobre os parâmetros de entrada e resposta.
+- **Testar Endpoints**: Com um simples clique, você pode enviar requisições diretamente da interface do Swagger, facilitando os testes sem precisar de ferramentas externas como o Postman ou cURL.
+- **Obter Exemplos de Respostas**: A documentação exibe exemplos de respostas que você pode esperar para cada requisição.
+
+### ⚡ Funcionalidade de Pesquisa
+
+Se você está buscando um endpoint específico, a interface permite realizar buscas rápidas. Basta digitar na barra de pesquisa e o Swagger UI filtrará os resultados para você.
+
+### 📚 Descrição dos Endpoints
+
+Aqui estão alguns dos principais endpoints disponíveis na API:
+
+- **Criar um Canal de Vendas**:
+  - **Método**: `POST`
+  - **Endpoint**: `/create_salesChannel/<str:name>`
+  - **Descrição**: Cria um novo canal de vendas. O parâmetro `name` é necessário para definir o nome do canal.
+
+- **Listar Vendas**:
+  - **Método**: `GET`
+  - **Endpoint**: `/sales/`
+  - **Descrição**: Retorna uma lista de vendas com a possibilidade de filtrar por `period_from`, `period_to`, `state` e `sale_channel`.
+
+- **Criar uma Venda**:
+  - **Método**: `POST`
+  - **Endpoint**: `/sales/create/`
+  - **Descrição**: Cria uma nova venda com base nos dados fornecidos no corpo da requisição.
+
+### 🛠️ Atualizações Automáticas
+
+Sempre que houver alterações na API, a documentação será atualizada automaticamente para refletir as novas mudanças. Não é necessário configurar nada adicionalmente para isso.
+
+---
 
 ## 🧑‍💻 **Scripts Importantes**
 
