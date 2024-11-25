@@ -1,0 +1,6 @@
+Django
+psycopg2
+python-dotenv
+djangorestframework
+django-cors-headers
+drf-yasg

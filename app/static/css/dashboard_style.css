@@ -1,0 +1,224 @@
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    font-size: 2.2rem;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.kpi {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kpi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.kpi h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.kpi p {
+    font-size: 2rem;
+    margin: 10px 0 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.chart-container {
+    margin: 30px auto;
+    width: 94%;
+    text-align: center;
+    max-width: 1000px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.chart-container h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+/* Estilo personalizado para as barras de pódio */
+.podium-bar {
+    background-color: gold;
+}
+
+.podium-bar-2 {
+    background-color: silver;
+}
+
+.podium-bar-3 {
+    background-color: #cd7f32;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .kpi {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .kpi {
+        width: 100%;
+    }
+}
+
+.filters {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 100%;
+    overflow-x: auto; /* Permite rolagem se os filtros não couberem na tela */
+}
+
+.filters h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.filter-group {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os itens quebrem para a linha seguinte */
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto; /* Permite rolagem caso os filtros não caibam na tela */
+}
+
+.filter-item {
+    flex: 1 1 150px;
+    min-width: 150px; /* Define um tamanho mínimo para cada item */
+}
+
+.filter-item label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.filter-item input, .filter-item select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.filter-item input:focus, .filter-item select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .filter-group {
+        flex-wrap: wrap; /* Permite que os itens se reorganizem em telas pequenas */
+    }
+
+    .filter-item {
+        flex: 1 1 100%;
+    }
+
+    .filter-button {
+        width: auto;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336; /* Vermelho para erro */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    z-index: 1000;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+/* Animação para o popup */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Escondido por padrão */
+.hidden {
+    display: none;
+}
