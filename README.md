@@ -50,8 +50,12 @@ Antes de começar, você precisa ter o seguinte instalado:
    ```bash
    docker-compose up --build
    ```
+   >Caso encontre dificuldade em executar o projeto com o comando acima, talvez seja necessário especificar o caminho do arquivo .env diretamente no comando, para que o mesmo seja cerregado devidamente. Isso é facílmente possível com o comando abaixo:
+   ```bash
+   docker compose --env-file ./app/.env up --build
+   ```
 
-4. Acesse a aplicação no navegador:
+5. Acesse a aplicação no navegador:
 
    [http://localhost:8000](http://localhost:8000) 🌐
 
