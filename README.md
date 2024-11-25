@@ -77,9 +77,7 @@ A nossa API é completamente documentada utilizando o [Swagger UI](https://swagg
 
 Para acessar a documentação interativa da API, basta navegar até o seguinte endpoint em seu navegador:
 
-```
-http://localhost:8000/api/docs/
-```
+[http://localhost:8000/api/docs/](http://localhost:8000/api/docs/) 🌐
 
 Esta interface exibe todos os endpoints da API, incluindo as descrições, parâmetros esperados e exemplos de resposta.
 
