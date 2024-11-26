@@ -22,17 +22,14 @@ from datetime import datetime
 )
 @api_view(['POST'])
 def create_salesChannel(request, name):
-    if request.method == 'POST':
-        serializer = SaleChannelSerializer(data={"name": name.lower()})
+    serializer = SaleChannelSerializer(data={"name": name.lower()})
 
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        else:
-            errors = serializer.errors
-            return Response({"errors": errors}, status.HTTP_400_BAD_REQUEST)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
     else:
-        return MethodNotAllowed("This HTTP method is not allowed on this endpoint.")
+        errors = serializer.errors
+        return Response({"errors": errors}, status.HTTP_400_BAD_REQUEST)
 
 @swagger_auto_schema(
     method='post',
